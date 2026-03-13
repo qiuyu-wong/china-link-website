@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>China Link | Professional China Travel Service</title>
+    <title>China Link | Your Independent China Travel Designer</title>
     <!-- 引入 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 Font Awesome -->
@@ -11,7 +11,7 @@
     <style>
         html { scroll-behavior: smooth; }
         .hero-bg {
-            /* 背景图建议换成实拍 */
+            /* 建议：这里替换为你自己在景点的实拍图，增加信任感 */
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop'); 
             background-size: cover;
             background-position: center;
@@ -21,53 +21,26 @@
             object-fit: cover;
             width: 100%;
         }
-        /* Logo 动画效果 */
-        .logo-hover:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
 
-    <!-- 导航栏：左侧放置 Logo -->
+    <!-- 导航栏 -->
     <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Logo 区域 -->
-            <a href="#" class="flex items-center gap-3 logo-hover">
-                <!-- 【重要】请将下面的 src 替换为你实际的 logo 文件路径，例如 'images/logo.png' -->
-                <!-- 这里我用了占位符，你需要把刚才那个 logo 保存为 logo.png 放在同级目录 -->
-                <img src="logo.png" alt="China Link Logo" class="h-12 w-12 md:h-16 md:w-16 object-contain">
-                <div class="hidden md:block leading-tight">
-                    <span class="block text-xl font-bold text-red-700 tracking-wider">CHINA LINK</span>
-                    <span class="block text-xs text-gray-500 font-medium">PROFESSIONAL SERVICE</span>
-                </div>
-            </a>
-            
-            <!-- 菜单 -->
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-red-700 tracking-wider">CHINA LINK<span class="text-gray-600 text-sm font-normal block md:inline md:ml-2">| Independent Designer</span></a>
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="#about" class="hover:text-red-700 transition font-medium">About Me</a>
-                <a href="#guides" class="hover:text-red-700 transition font-medium">Our Guides</a>
+                <a href="#about" class="hover:text-red-700 transition">About Me</a>
+                <a href="#guides" class="hover:text-red-700 transition">Our Guides</a>
                 <a href="#b2b" class="hover:text-red-700 transition font-semibold text-red-600">For Agents</a>
-                <a href="#contact" class="bg-red-700 text-white px-5 py-2 rounded-full hover:bg-red-800 transition font-medium">WhatsApp Us</a>
-            </div>
-            
-            <!-- 移动端菜单按钮 (简化版) -->
-            <div class="md:hidden">
-                <a href="#contact" class="text-red-700 font-bold"><i class="fab fa-whatsapp text-2xl"></i></a>
+                <a href="#contact" class="bg-red-700 text-white px-5 py-2 rounded-full hover:bg-red-800 transition">WhatsApp Us</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero 区域：加入 Logo 元素增强品牌感 -->
-    <header class="hero-bg h-screen flex items-center justify-center text-center text-white px-4 relative">
-        <div class="max-w-4xl z-10">
-            <!-- 可以在这里再放一次小一点的 Logo，或者只放文字 -->
-            <div class="mb-6 inline-block bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20">
-                 <!-- 再次引用 Logo，这次作为装饰 -->
-                <img src=https://i.ibb.co/sJqZgnfK/logo.png="China Link" class="h-20 w-20 md:h-24 md:w-24 object-contain mx-auto drop-shadow-lg">
-            </div>
-            
+    <!-- Hero 区域 -->
+    <header class="hero-bg h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
             <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Don't Just Book a Bus.<br>Book a <span class="text-red-400">Local Friend</span> in China.
             </h1>
@@ -92,7 +65,8 @@
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2070&auto=format&fit=crop" alt="Founder of China Link" class="rounded-lg shadow-2xl w-full object-cover h-[500px]">
+                        <!-- 【重要】请替换为你自己的真实照片 -->
+                        <img src=https://i.ibb.co/gZSTwpvF/picture.jpg="Founder of China Link" class="rounded-lg shadow-2xl w-full object-cover h-[500px]">
                         <div class="absolute -bottom-6 -right-6 bg-red-700 text-white p-6 rounded-lg shadow-xl hidden md:block">
                             <p class="text-3xl font-bold">5+</p>
                             <p class="text-sm">Years Experience</p>
@@ -100,7 +74,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Hi, I'm Vivi,<br>Your Dedicated Local Expert.</h2>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Hi, I'm Vivi, <br>Your Dedicated Local Expert.</h2>
                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
                         Welcome to <strong>China Link</strong>. Unlike large corporations where you are just a booking number, I run a <strong>boutique studio</strong> focused on quality over quantity.
                     </p>
@@ -117,73 +91,89 @@
         </div>
     </section>
 
-    <!-- Guide Profiles Section -->
+    <!-- 🌟 NEW: Guide Profiles Section (核心修改) -->
     <section id="guides" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Meet Our Partner Guides</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
                     We don't just assign random drivers. We match your clients with specialists based on their interests. 
+                    These are some of our trusted partners who have passed our strict quality checks.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- 导游 1 -->
+                
+                <!-- 导游卡片 1: 历史专家 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" alt="Guide David" class="guide-img">
+                    <!-- 【重要】替换为真实导游照片 -->
+                    <img src=https://i.ibb.co/6c35LQJH/Mr-Zhang.png="Guide David" class="guide-img">
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-bold text-gray-900">David L.</h3>
                             <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Beijing Expert</span>
                         </div>
-                        <p class="text-gray-500 text-sm mb-4"><i class="fas fa-star text-yellow-400"></i> 12 Years Experience</p>
+                        <p class="text-gray-500 text-sm mb-4"><i class="fas fa-star text-yellow-400"></i> 12 Years Experience | Licensed Guide</p>
                         <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                            Former history teacher specializing in the Forbidden City. Perfect for history buffs and families.
+                            Former history teacher specializing in the Forbidden City and Great Wall. David knows every secret corner of Beijing and loves explaining complex dynastic history in simple, engaging English. Perfect for history buffs and families.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">History</span>
                             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Architecture</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Family Friendly</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 导游 2 -->
+                <!-- 导游卡片 2: 摄影/户外达人 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" alt="Guide Sarah" class="guide-img">
+                    <!-- 【重要】替换为真实导游照片 -->
+                    <img src=https://i.ibb.co/5x27hTJ6/Emma.png="Guide Sarah" class="guide-img">
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-bold text-gray-900">Sarah W.</h3>
                             <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Xi'an & Nature</span>
                         </div>
-                        <p class="text-gray-500 text-sm mb-4"><i class="fas fa-star text-yellow-400"></i> 8 Years Experience</p>
+                        <p class="text-gray-500 text-sm mb-4"><i class="fas fa-star text-yellow-400"></i> 8 Years Experience | Photography Pro</p>
                         <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                            A passionate photographer and outdoor enthusiast. Takes clients to the "wild" Great Wall sections.
+                            A passionate photographer and outdoor enthusiast. Sarah takes clients to the "wild" sections of the Great Wall and knows the best lighting spots for the Terracotta Warriors. She drives her own 4x4 for off-road adventures.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Photography</span>
                             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Hiking</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Foodie</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 导游 3 -->
+                <!-- 导游卡片 3: 商务/高端定制 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000&auto=format&fit=crop" alt="Guide Michael" class="guide-img">
+                    <!-- 【重要】替换为真实导游照片 -->
+                    <img src=https://i.ibb.co/Y4X93K33/Calvin.png="Guide Michael" class="guide-img">
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-bold text-gray-900">Michael Z.</h3>
                             <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Shanghai & Business</span>
                         </div>
-                        <p class="text-gray-500 text-sm mb-4"><i class="fas fa-star text-yellow-400"></i> 10 Years Experience</p>
+                        <p class="text-gray-500 text-sm mb-4"><i class="fas fa-star text-yellow-400"></i> 10 Years Experience | MBA Background</p>
                         <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                            MBA background. The go-to guide for corporate groups and high-end luxury travelers.
+                            With a background in international business, Michael is the go-to guide for corporate groups and high-end luxury travelers. He speaks fluent English and French, and excels at arranging exclusive private dinners and gallery visits.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Business</span>
                             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Luxury</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Art</span>
                         </div>
                     </div>
                 </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Need a specialist in Chengdu, Guilin, or Tibet? We have more partners in our network.</p>
+                <a href="#contact" class="inline-block border-2 border-red-700 text-red-700 font-bold py-2 px-6 rounded-full hover:bg-red-700 hover:text-white transition">
+                    Ask About Other Cities
+                </a>
             </div>
         </div>
     </section>
@@ -193,31 +183,32 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Partnership for Travel Agents</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">We help boutique agencies create unforgettable China itineraries with competitive net rates.</p>
+                <p class="text-gray-400 max-w-2xl mx-auto">We help boutique agencies and independent advisors create unforgettable China itineraries with competitive net rates and zero hassle.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition">
                     <i class="fas fa-hand-holding-usd text-4xl text-red-500 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Competitive Net Rates</h3>
-                    <p class="text-gray-400">Direct pricing from source. You keep the margin.</p>
+                    <p class="text-gray-400">Direct pricing from source. You keep the margin. No hidden fees.</p>
                 </div>
                 <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition">
                     <i class="fas fa-passport text-4xl text-red-500 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Visa-Free Expert</h3>
-                    <p class="text-gray-400">Specialists in 144-Hour Transit policies.</p>
+                    <p class="text-gray-400">Specialists in 144-Hour Transit policies. We handle the complex logistics.</p>
                 </div>
                 <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition">
                     <i class="fas fa-headset text-4xl text-red-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
-                    <p class="text-gray-400">Real human support via WhatsApp during the trip.</p>
+                    <h3 class="text-xl font-bold mb-2">24/7 On-Ground Support</h3>
+                    <p class="text-gray-400">Real human support via WhatsApp/WeChat during your clients' trip.</p>
                 </div>
             </div>
 
+            <!-- 留资下载框 -->
             <div class="bg-white text-gray-900 rounded-xl p-8 md:p-12 max-w-4xl mx-auto shadow-2xl flex flex-col md:flex-row items-center justify-between">
                 <div class="mb-6 md:mb-0 md:mr-8">
                     <h3 class="text-2xl font-bold mb-2">Get Our 2026 B2B Rate Card</h3>
-                    <p class="text-gray-600">Includes net prices for Beijing, Shanghai, Xi'an & more.</p>
+                    <p class="text-gray-600">Includes net prices for Beijing, Shanghai, Xi'an & more. Plus sample itineraries.</p>
                 </div>
                 <form class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                     <input type="email" placeholder="Your Work Email" class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500 w-full" required>
@@ -229,8 +220,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-12">
                 <div class="mb-8 md:mb-0 text-center md:text-left">
@@ -238,19 +229,20 @@
                     <p class="text-gray-400">Let's hop on a quick call or chat on WhatsApp.</p>
                 </div>
                 <div class="flex gap-4">
-                    <a href="https://wa.me/861234567890" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg flex items-center transition">
+                    <a href="https://wa.me/8613235862025" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg flex items-center transition">
                         <i class="fab fa-whatsapp text-xl mr-2"></i> WhatsApp Us
                     </a>
-                    <a href="mailto:info@chinalinktravel.com" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg flex items-center transition">
+                    <a href="mailto:vivi.chinalinktravel@gmail.com" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg flex items-center transition">
                         <i class="fas fa-envelope text-xl mr-2"></i> Email Us
                     </a>
                 </div>
             </div>
             
-            <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                 <p>&copy; 2026 China Link Travel Studio. All rights reserved.</p>
                 <div class="mt-4 md:mt-0">
                     <span class="mr-4">Operating in partnership with licensed DMCs.</span>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
                 </div>
             </div>
         </div>
